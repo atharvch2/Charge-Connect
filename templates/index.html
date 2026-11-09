@@ -2,12 +2,88 @@
 <html>
 <head>
         <title>Charge Connect</title>
+        <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Welcome to Charge Connect</h1>
-    <p>Find EV Charging hosts near you.</p>
-    <button>I'm a driver</button>
-    <button>i'm a host</button>
+    
+    
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">ChargeConnect</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Find Charging</a>
+            <a href="#">Become a Host</a>
+            <a href="#">About Us</a>
+        </div>
+
+        <button class="nav-button">Get Started</button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <p class="tagline">⚡ Smart EV Charging Network</p>
+
+            <h1>Power Your Journey,<br>Anywhere.</h1>
+
+            <p class="description">
+                Find nearby EV charging points or share your
+                electricity connection with fellow EV drivers.
+            </p>
+
+            <div class="hero-buttons">
+                <button>Find a Charger</button>
+                <button>Become a Host</button>
+            </div>
+        </div>
+         <div class="hero-image">
+            <img src="{{ url_for('static',filename='images/ev-charging.jpg')}}"
+            alt="electric vehicle charging station">
+        </div>
+        
+        
+    </section>
+    <!-- How It Works Section -->
+<section class="how-it-works">
+
+    <h2>How ChargeConnect Works</h2>
+
+    <p class="section-description">
+        Charging your EV has never been this simple.
+    </p>
+
+    <div class="steps-container">
+
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Find a Host</h3>
+            <p>Discover nearby charging points available around you.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Send a Request</h3>
+            <p>Choose your charging requirements and request a slot.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Charge & Go</h3>
+            <p>Connect your EV and get back on the road.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
 </body>
 
 </html>
