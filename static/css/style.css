@@ -237,3 +237,107 @@ button:hover{
         font-size: 28px;
     }
 }
+
+/* DRIVER REGISTRATION PAGE */
+
+.registration-page {
+    min-height: 100vh;
+    background: #F5F8F5;
+    color: #26352E;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+/* Page Heading */
+
+.registration-page h1 {
+    text-align: center;
+    color: #174B38;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.registration-page p {
+    text-align: center;
+    color: #66756B;
+    margin-bottom: 30px;
+}
+
+/* Registration Form */
+
+.registration-page form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Labels */
+
+.registration-page label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    color: #174B38;
+}
+
+/* Input Fields */
+
+.registration-page input,
+.registration-page select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D5DED7;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    background: #FAFCFA;
+    transition: 0.2s;
+}
+
+.registration-page input:focus,
+.registration-page select:focus {
+    border-color: #174B38;
+    box-shadow: 0 0 5px rgba(23, 75, 56, 0.2);
+}
+
+/* Register Button */
+
+.registration-page button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 28px;
+    background: #174B38;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.registration-page button:hover {
+    background: #B7F51A;
+    color: #174B38;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+    .registration-page {
+        padding: 25px 15px;
+    }
+
+    .registration-page form {
+        padding: 25px 20px;
+    }
+
+    .registration-page h1 {
+        font-size: 26px;
+    }
+}

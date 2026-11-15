@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body>
+<body class="registration-page">
 
     <section class="registration">
 
@@ -23,13 +23,13 @@
             <input type="text" name="full_name" placeholder="Enter your name" required>
 
             <label>Email Address</label>
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
 
             <label>Phone Number</label>
-            <input type="tel" placeholder="Enter your phone number" required>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
 
             <label>Vehicle Type</label>
-            <select required>
+            <select name="vehicle_type" required>
                 <option value="">Select your vehicle</option>
                 <option value="scooter">Electric Scooter</option>
                 <option value="car">Electric Car</option>
