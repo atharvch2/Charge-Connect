@@ -341,3 +341,173 @@ button:hover{
         font-size: 26px;
     }
 }
+
+/* HERO SECTION BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #174B38;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #B7F51A;
+    color: #174B38;
+    transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTON (if required) */
+
+.btn-secondary {
+    background-color: transparent;
+    color: #174B38;
+    border: 2px solid #174B38;
+}
+
+.btn-secondary:hover {
+    background-color: #174B38;
+    color: white;
+}
+
+/* NAVBAR LINKS */
+
+nav a {
+    text-decoration: none;
+    color: #174B38;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #8DBD00;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* HOST REGISTRATION PAGE */
+
+.host-registration {
+    min-height: 100vh;
+    background: #F5F8F5;
+    color: #26352E;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+/* Heading */
+
+.host-registration h1 {
+    text-align: center;
+    color: #174B38;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.host-registration p {
+    text-align: center;
+    color: #66756B;
+    margin-bottom: 30px;
+}
+
+/* Form Container */
+
+.host-registration form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Labels */
+
+.host-registration label {
+    display: block;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #174B38;
+}
+
+/* Input Fields */
+
+.host-registration input,
+.host-registration select,
+.host-registration textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D5DED7;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    background: #FAFCFA;
+    transition: 0.2s;
+}
+
+.host-registration input:focus,
+.host-registration select:focus,
+.host-registration textarea:focus {
+    border-color: #174B38;
+    box-shadow: 0 0 5px rgba(23, 75, 56, 0.2);
+}
+
+/* Textarea */
+
+.host-registration textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Submit Button */
+
+.host-registration button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 28px;
+    background: #174B38;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.host-registration button:hover {
+    background: #B7F51A;
+    color: #174B38;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+    .host-registration {
+        padding: 25px 15px;
+    }
+
+    .host-registration form {
+        padding: 25px 20px;
+    }
+
+    .host-registration h1 {
+        font-size: 26px;
+    }
+}

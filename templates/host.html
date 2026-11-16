@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Registration - ChargeConnect</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="host-registration">
+
+    <h1>Become a Host</h1>
+
+    <p>Share your electricity connection and help EV drivers charge nearby.</p>
+
+    <form method="POST" action="{{ url_for('host') }}">
+
+        <label>Full Name</label>
+        <input type="text" name="full_name"
+        placeholder="Enter your name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email"
+        placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone"
+        placeholder="Enter your phone number" required>
+
+        <label>Location</label>
+        <input type="text" name="location"
+        placeholder="Enter your location" required>
+
+        <label>Charging Availability</label>
+        <select name="availability" required>
+            <option value="">Select availability</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="Full Day">Full Day</option>
+        </select>
+
+        <label>Price per Unit (₹)</label>
+        <input type="number" name="price"
+        placeholder="Enter price per unit" min="1" required>
+
+        <button type="submit">Register as Host</button>
+
+    </form>
+
+</body>
+</html>
